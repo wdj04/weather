@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气查询工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>天气查询工具</h1>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="请输入城市名称">
+            <button onclick="searchWeather()">查询</button>
+        </div>
+        
+        <div class="unit-toggle">
+            <label>温度单位：</label>
+            <input type="radio" name="unit" value="celsius" checked id="celsius">
+            <label for="celsius">°C</label>
+            <input type="radio" name="unit" value="fahrenheit" id="fahrenheit">
+            <label for="fahrenheit">°F</label>
+        </div>
+
+        <div id="weatherResult" class="weather-result">
+            <!-- 天气信息将在这里显示 -->
+        </div>
+
+        <div id="error" class="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
